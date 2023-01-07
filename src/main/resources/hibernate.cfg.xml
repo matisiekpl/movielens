@@ -1,0 +1,24 @@
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:h2:./movielens</property>
+        <property name="connection.driver_class">org.h2.Driver</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.H2Dialect</property>
+
+
+        <!-- <property name="connection.username"/> -->
+        <!-- <property name="connection.password"/> -->
+
+        <!--        <property name="hibernate.hbm2ddl.auto">create</property>-->
+        <!--      <property name="hibernate.hbm2ddl.auto">create-drop</property>-->
+        <!--      <property name="hibernate.hbm2ddl.auto">drop</property>-->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <mapping class="pl.edu.agh.student.wozniakmat.movielens.User"/>
+        <mapping class="pl.edu.agh.student.wozniakmat.movielens.Movie"/>
+        <mapping class="pl.edu.agh.student.wozniakmat.movielens.MovieGenre"/>
+        <mapping class="pl.edu.agh.student.wozniakmat.movielens.Tag"/>
+        <mapping class="pl.edu.agh.student.wozniakmat.movielens.Rating"/>
+
+
+    </session-factory>
+</hibernate-configuration>
