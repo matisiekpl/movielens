@@ -36,4 +36,15 @@ public class Movie {
     @Getter
     @Setter
     private Set<Rating> ratings = new HashSet<>();
+
+    @Override
+    public String toString() {
+        return "Movie{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", genreList=" + genreList +
+                ", tags=" + tags.size() +
+                ", ratings=" + ratings.size() +
+                '}';
+    }
 }

@@ -29,10 +29,18 @@ public class User {
     String email;
 
     @OneToMany(mappedBy = "user")
-    private
-    Set<Tag> tags = new HashSet<>();
-    @OneToMany(mappedBy = "rating")
-    private
-    Set<Rating> ratings = new HashSet<>();
+    private Set<Tag> tags = new HashSet<>();
+    @OneToMany(mappedBy = "ratingId.user")
+    @Getter
+    private Set<Rating> ratings = new HashSet<>();
+
+    public String toString() {
+        StringBuilder b = new StringBuilder();
+        b.append(forename);
+        b.append(" ");
+        b.append(surname);
+        b.append(String.format("(%s,id=%d,ratings=%d, tags=%d)", email, id, ratings.size(), tags.size()));
+        return b.toString();
+    }
 
 }

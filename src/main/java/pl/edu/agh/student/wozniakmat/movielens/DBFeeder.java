@@ -179,13 +179,4 @@ public class DBFeeder {
         }
         ses.close();
     }
-
-    public static void main(String[] args) {
-        deleteAll();
-        feedMovies();
-        feedUsers();
-        feedTags();
-        feedRatings();
-        check();
-    }
 }

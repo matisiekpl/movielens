@@ -65,11 +65,19 @@ public class Rating {
     RatingId ratingId = new RatingId();
 
     void setUser(User user) {
-        ratingId.setUser(user);
+        ratingId.user = user;
     }
 
     void setMovie(Movie movie) {
-        ratingId.setMovie(movie);
+        ratingId.movie = movie;
+    }
+
+    public Movie getMovie() {
+        return ratingId.movie;
+    }
+
+    public User getUser() {
+        return ratingId.user;
     }
 
     @Getter

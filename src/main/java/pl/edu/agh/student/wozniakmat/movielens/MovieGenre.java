@@ -55,7 +55,7 @@ public class MovieGenre {
     }
 
     @EmbeddedId
-    MovieGenre.MovieGenreId movieGenreId = new MovieGenreId();
+    MovieGenreId movieGenreId = new MovieGenreId();
 
     public MovieGenre(Movie movie, String genre) {
         this.setMovie(movie);
