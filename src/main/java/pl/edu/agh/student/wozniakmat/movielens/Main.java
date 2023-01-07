@@ -15,13 +15,19 @@ public class Main {
 //        sampleQuery();
 //        sampleQueryAsStream();
 //
-//        mostActiveUsers();
-//        mostActiveUsersAsStream();
+        mostActiveUsers();
+        mostActiveUsersAsStream();
 
-//        dramaMovies();
-//        dramaMoviesAsStream();
+        dramaMovies();
+        dramaMoviesAsStream();
 
         taggedByRichardOliver();
         taggedByRichardOliverAsStream();
+
+        moviesWithDiCaprio();
+        moviesWithDiCaprioAsStream();
+
+        ratingsOverYears();
+        ratingsOverYearsAsStream();
     }
 }
